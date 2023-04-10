@@ -29,3 +29,7 @@ jobs:
           file: ./dockerfile
           push: true
           tags: rameshkumar456/clockbox:latest
+      - name: Download a single artifact
+        uses: actions/download-artifact@v3
+        with:
+           name: my-artifact
